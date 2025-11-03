@@ -148,8 +148,8 @@ POST /participants/register
 Content-Type: application/json
 
 {
-  "name": "Diego",
-  "email": "diego@test.com",
+  "name": "user",
+  "email": "user@test.com",
   "age": 31,
   "country": "Colombia",
   "city": "Bogotá",
@@ -168,7 +168,7 @@ Content-Type: application/json
 
 # Pregunta 1 (categoría + texto)
 {
-  "email": "diego@test.com",
+  "email": "user@test.com",
   "questionId": 1,
   "categorySlug": "salud",
   "description": "No hay hospital en el barrio"
@@ -176,7 +176,7 @@ Content-Type: application/json
 
 # Pregunta 2 (solo texto)
 {
-  "email": "diego@test.com",
+  "email": "user@test.com",
   "questionId": 2,
   "description": "Organizar brigadas médicas mensuales"
 }
@@ -214,17 +214,17 @@ curl http://localhost:4000/questions
 # Registrar participante (upsert)
 curl -X POST http://localhost:4000/participants/register \
   -H "Content-Type: application/json" \
-  -d "{\"name\":\"Diego\",\"email\":\"diego@test.com\",\"age\":31,\"country\":\"Colombia\",\"city\":\"Bogotá\"}"
+  -d "{\"name\":\"user\",\"email\":\"user@test.com\",\"age\":31,\"country\":\"Colombia\",\"city\":\"Bogotá\"}"
 
 # Necesidad P1 (requiere categoría)
 curl -X POST http://localhost:4000/needs \
   -H "Content-Type: application/json" \
-  -d "{\"email\":\"diego@test.com\",\"questionId\":1,\"categorySlug\":\"salud\",\"description\":\"No hay hospital en el barrio\"}"
+  -d "{\"email\":\"user@test.com\",\"questionId\":1,\"categorySlug\":\"salud\",\"description\":\"No hay hospital en el barrio\"}"
 
 # Necesidad P2 (solo texto)
 curl -X POST http://localhost:4000/needs \
   -H "Content-Type: application/json" \
-  -d "{\"email\":\"diego@test.com\",\"questionId\":2,\"description\":\"Organizar brigadas médicas mensuales\"}"
+  -d "{\"email\":\"user@test.com\",\"questionId\":2,\"description\":\"Organizar brigadas médicas mensuales\"}"
 
 # Respuestas enriquecidas
 curl "http://localhost:4000/responses?questionId=1"

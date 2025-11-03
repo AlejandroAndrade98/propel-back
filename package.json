@@ -15,12 +15,12 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/diego-forero/propel-back.git"
+    "url": ""
   },
   "keywords": [],
-  "author": "Diego Forero",
+  "author": "",
   "license": "ISC",
-  "homepage": "https://github.com/diego-forero/propel-back#readme",
+  "homepage": "",
   "description": "",
   "dependencies": {
     "cors": "^2.8.5",
