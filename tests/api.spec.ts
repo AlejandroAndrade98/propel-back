@@ -13,7 +13,7 @@ const BASE_CATS = [
 ];
 
 const BASE_QUESTIONS = [
-  { prompt: '¿Cuál crees que es la mayor necesidad en tu comunidad?' }, // id=1
+  { prompt: '¿Cuál crees que es la mayor necesidad en tu Empresa?' }, // id=1
   { prompt: '¿Qué acción concreta propondrías para mejorar esa situación?' }, // id=2
 ];
 

@@ -16,7 +16,7 @@ async function seed() {
     { name: 'Cultura / Deporte', slug: 'cultura-deporte' },
   ];
   const baseQuestions = [
-    { prompt: '¿Cuál crees que es la mayor necesidad en tu comunidad?' },
+    { prompt: '¿Cuál crees que es la mayor necesidad en tu Empresa?' },
     { prompt: '¿Qué acción concreta propondrías para mejorar esa situación?' },
   ];
 
